@@ -12,6 +12,10 @@ Note that it doesn't yet support floats, but just integers. (adding support for 
 
 The name give it away, but this is inspired from `randrange` in Python's `random` module.
 
+To compile it: `gcc randrange4.c -lgmp` or `gcc -o randrange4 randrange4.c -lgmp`
+
+Possible optimizations: `-O3 -ftree-parallelize-loops=4 -march=native -ffast-math -funroll-loops`
+
 - [random_file.c](https://github.com/secemp9/Stuff2C/blob/main/random_file.c)
 
 Very simple way to generate files of X size (in bytes). This one support flags/commandline arguments. I tried it on both Windows10 and Linux and it seems to work fine (although on Linux, using urandom/random can be used too). Note that this isn't made to be specifically cryptographic secured or anything. Just made for no specific reasons.
