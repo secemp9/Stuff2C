@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <gmp.h>
 
-// Generates a random integer in the range [a, b) with a step size of s
+// Generates a random integer in the range [a, b] with a step size of s
 // using the specified seed value
 void gmp_randrange(mpz_t result, mpz_t a, mpz_t b, mpz_t s, mpz_t seed) {
     // Initialize the random number generator
