@@ -9,6 +9,7 @@ I named it that way because I usually make different versions locally. I feel li
 It works using gmplib because I wanted to have big int support like Python does (also called bignum). It doesn't support commandline argument/flags yet, but it should be trivial to add. Can be used as template too.
 
 Note that it doesn't yet support floats, but just integers. (adding support for it can be done too, but I only needed int support anyway)
+The name give it away, but this is inspired from `randrange` in Python's `random` module.
 
 - [random_file.c](https://github.com/secemp9/Stuff2C/blob/main/random_file.c)
 
