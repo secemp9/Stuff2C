@@ -10,7 +10,7 @@ It works using gmplib because I wanted to have big int support like Python does 
 
 Note that it doesn't yet support floats, but just integers. (adding support for it can be done too, but I only needed int support anyway).
 
-The name give it away, but this is inspired from `randrange` in Python's `random` module.
+The name give it away, but this is inspired from `randrange` in Python's `random` module. By the way, this use a deterministic seed, but you can make it use a random seed (using time, etc).
 
 To compile it: `gcc randrange4.c -lgmp` or `gcc -o randrange4 randrange4.c -lgmp`
 
