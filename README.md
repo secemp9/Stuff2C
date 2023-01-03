@@ -20,4 +20,11 @@ Possible optimizations: `-O3 -ftree-parallelize-loops=4 -march=native -ffast-mat
 
 Very simple way to generate files of X size (in bytes). This one support flags/commandline arguments. I tried it on both Windows10 and Linux and it seems to work fine (although on Linux, using urandom/random can be used too). Note that this isn't made to be specifically cryptographic secured or anything. Just made for no specific reasons.
 
+To compile it: `gcc random_file.c` or `gcc -o random_file random_file.c`
+
+Possible optimizations: `-O3 -ftree-parallelize-loops=4 -march=native -ffast-math -funroll-loops`
+
+Note that I didn't yet add support for gmplib so it only support up to long long int (I think), although here it uses long, so there a limit on how much bytes you can generate using this.
+
+
 I'll add more here as I go over my journey into C land.
