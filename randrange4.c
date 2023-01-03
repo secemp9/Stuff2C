@@ -32,12 +32,12 @@ int main(void) {
     mpz_t a, b, s, r, seed;
 
     // Set the values of a, b, and s
-    mpz_init_set_str(a, "9999", 10); // a = 10
-    mpz_init_set_str(b, "99999", 10); // b = 100
-    mpz_init_set_str(s, "5", 10); // s = 5
+    mpz_init_set_str(a, "9999", 10);
+    mpz_init_set_str(b, "99999", 10);
+    mpz_init_set_str(s, "5", 10);
 
     // Set the seed value
-    mpz_init_set_str(seed, "99999999999", 10); // seed = 12345
+    mpz_init_set_str(seed, "99999999999", 10);
 
     // Generate a random integer in the range [a, b) with a step size of s
     // using the specified seed value
